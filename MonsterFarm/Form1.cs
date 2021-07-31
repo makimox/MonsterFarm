@@ -39,19 +39,19 @@ namespace MonsterFarm
 
                 switch(hashCode1桁)
                 {
-                    case int i when i < 30 :
+                    case int i when i < 25 :
                         pictureBox1.Image = Bitmap.FromFile(directory + "\\g\\aaa1.jpg");
                         break;
-                    case int i when i < 50:
+                    case int i when i < 40:
                         pictureBox1.Image = Bitmap.FromFile(directory + "\\g\\aaa2.jpg");
                         break;
-                    case int i when i < 70:
+                    case int i when i < 60:
                         pictureBox1.Image = Bitmap.FromFile(directory + "\\g\\aaa3.jpg");
                         break;
-                    case int i when i < 80:
+                    case int i when i < 75:
                         pictureBox1.Image = Bitmap.FromFile(directory + "\\g\\aaa4.jpeg");
                         break;
-                    case int i when i < 95:
+                    case int i when i < 90:
                         pictureBox1.Image = Bitmap.FromFile(directory + "\\g\\aaa6.jpg");
                         break;
                     default:
