@@ -33,6 +33,7 @@ namespace MonsterFarm
             foreach (var filePath in (string[])e.Data.GetData(DataFormats.FileDrop))
             {
                 var directory = System.IO.Directory.GetCurrentDirectory();
+                var value = 5;
 
                 var hashCode = filePath.GetHashCode();
                 var hashCode1桁 = hashCode % 100;
