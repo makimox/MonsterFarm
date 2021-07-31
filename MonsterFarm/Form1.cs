@@ -35,21 +35,27 @@ namespace MonsterFarm
                 var directory = System.IO.Directory.GetCurrentDirectory();
 
                 var hashCode = filePath.GetHashCode();
-                var hashCode1桁 = hashCode % 10;
+                var hashCode1桁 = hashCode % 100;
 
                 switch(hashCode1桁)
                 {
-                    case int i when i < 3 :
+                    case int i when i < 30 :
                         pictureBox1.Image = Bitmap.FromFile(directory + "\\g\\aaa1.jpg");
                         break;
-                    case int i when i < 6:
+                    case int i when i < 50:
                         pictureBox1.Image = Bitmap.FromFile(directory + "\\g\\aaa2.jpg");
                         break;
-                    case int i when i < 9:
+                    case int i when i < 70:
                         pictureBox1.Image = Bitmap.FromFile(directory + "\\g\\aaa3.jpg");
                         break;
-                    default:
+                    case int i when i < 80:
                         pictureBox1.Image = Bitmap.FromFile(directory + "\\g\\aaa4.jpeg");
+                        break;
+                    case int i when i < 95:
+                        pictureBox1.Image = Bitmap.FromFile(directory + "\\g\\aaa6.jpg");
+                        break;
+                    default:
+                        pictureBox1.Image = Bitmap.FromFile(directory + "\\g\\aaa5.gif");
                         break;
 
                 }
